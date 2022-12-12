@@ -1,0 +1,42 @@
+.text {
+    font-size: 6em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: monospace;
+    display: flex;
+    direction: rtl;
+}
+
+.letter {
+    border-bottom: 8px solid black;
+    margin-right: 20px;
+    width: 50px;
+    height: 80px;
+    text-align: center;
+}
+
+.hidden {
+    font-size: 0;
+}
+
+.space {
+    border: none;
+    margin-right: 20px;
+    width: 50px;
+    height: 80px;
+    text-align: center;
+}
+@media(max-width:550px){
+    .text {
+        font-size: 2em;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .letter {
+        border-bottom: 4px solid black;
+        margin-right: 20px;
+        width: 12px;
+        height: 35px;
+       
+    }
+}

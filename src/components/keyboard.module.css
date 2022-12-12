@@ -1,0 +1,46 @@
+.keyboard {
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 12px;
+    margin-top: 16px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.letterBtn {
+    text-align: center;
+    width: 40px;
+    border: 2px solid black;
+    margin: 4px;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgba(128, 128, 128, 0.231);
+}
+
+.letterBtn:hover:not(.inactive) {
+    background: lightblue;
+}
+
+.letterBtn.active {
+    background: rgb(3, 175, 232);
+    color: white;
+}
+.letterBtn.inactive {
+    opacity: .3;
+}
+@media(max-width:550px){
+    .letterBtn{
+        width: 30px;
+        font-size: 1.5em;
+       
+    }
+    .keyboard{
+        padding: 0;
+        border: none;
+        margin-top: 100px;
+    }
+}
